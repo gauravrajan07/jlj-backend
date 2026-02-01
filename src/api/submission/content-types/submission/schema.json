@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submissions",
+  "info": {
+    "singularName": "submission",
+    "pluralName": "submissions",
+    "displayName": "Submission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "ArticleTitle": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "AdditionalAuthors": {
+      "type": "string"
+    },
+    "WordCount": {
+      "type": "biginteger"
+    },
+    "Exclusive": {
+      "type": "boolean"
+    },
+    "Title": {
+      "type": "enumeration",
+      "enum": [
+        "Prof",
+        "Dr",
+        "Student",
+        "other"
+      ]
+    },
+    "ArticleType": {
+      "type": "enumeration",
+      "enum": [
+        "Article",
+        "Essay",
+        "Journal",
+        "other"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Constitutional Law",
+        "etc"
+      ]
+    },
+    "OriginalFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnonymizedFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ExtraDocs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
